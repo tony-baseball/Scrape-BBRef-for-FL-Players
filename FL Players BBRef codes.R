@@ -73,7 +73,7 @@ endtime <- now()
 print(endtime - starttime)
 }
 
-write.csv(bbref_players, "C:/Users/tonybaseball/OneDrive/bbrefplayers.csv")
+# write.csv(bbref_players, "C:/Users/tonybaseball/OneDrive/bbrefplayers.csv")
 
 bbref_players <- read.csv("C:/Users/tdmed/OneDrive/bbrefplayers.csv") %>%
   mutate(LastName_strip = gsub("[- | ']", "", LastName),
@@ -84,7 +84,7 @@ bbref_players <- read.csv("C:/Users/tdmed/OneDrive/bbrefplayers.csv") %>%
          ) %>%
   select(-1)
 
-bbref_id <- bbref_players
+bbref_id <- bbref_players 
 
 # ----
 
