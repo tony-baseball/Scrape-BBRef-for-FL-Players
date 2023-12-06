@@ -61,7 +61,7 @@ links
     # add the players from this webpage to the existing players from previous pages
     bbref_players <- rbind(bbref_players, initial_df)
     
-    # Introduce a delay of at least 5 seconds. BBRef does not allow more than 20 api calls per minute, so to avoid getting put in session jail. Source here: https://www.sports-reference.com/bot-traffic.html
+    # Introduce a delay of at least 5 seconds. BBRef does not allow more than 20 api calls per minute. Source here: https://www.sports-reference.com/bot-traffic.html
     Sys.sleep(5)
   } 
 # bbref_players wound up with 452131 players as of 12/4/2023. 
